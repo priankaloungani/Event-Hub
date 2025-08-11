@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Event Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+    <!-- CSS Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="style.css">
+    <style>
+        .carousel-item {
+            position: relative;
+        }
+        .event-background {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(30%);
+        }
+        .event-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+.event-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.event-content p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.5rem .9rem;
+    font-size: .9rem;
+    border-radius: 2rem;
+    background: linear-gradient(90deg, rgb(74, 74, 73) 0%, rgb(109, 109, 107) 28%, rgb(61, 67, 60) 53%, rgb(85, 86, 80) 77%, rgb(79, 77, 69) 100%, rgb(78, 78, 79) 100%, rgb(64, 61, 64) 100%, rgb(81, 78, 81) 100%);;
+    color:#fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, rgba(7,117,116,1) 0%, rgba(0,82,255,1) 49%, rgba(1,134,115,1) 100%);;
+
+}
+
+body{
+            background: #222;
+        }
+   .section7{
+    width: 100vw;
+    height: auto; 
+}
+
+.H{
+   margin-left: 360px;
+   margin-top: 70px;
+}
+.C4{
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.C5{
+    margin-left: 360px;
+    margin-top: -186px;
+}
+.C6{
+    margin-left: 630px;
+    margin-top: -187px;
+}
+.C7{
+    margin-left: 900px;
+    margin-top: -187px;
+}
+.card-title img{
+   width: 40px;
+   height: 37px;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <section class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="vedio2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+        </div>
+    </section>
+
+
+
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="#" class="logo" style="text-decoration: none;"><span>Event</span>Hub</a>
+        <nav class="navbar">
+            <a href="AICT_PROJECT.html" style="text-decoration: none;">home</a>
+            <a href="service.html" style="text-decoration: none;">service</a>
+            <a href="about.html" style="text-decoration: none;">about</a>
+            <a href="blog.html" style="text-decoration: none;">Blog</a>
+            <a href="contact.html" style="text-decoration: none;">contact</a>
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3 ><b style="font-family: 'Times New Roman', Times, serif;">It’s Time to Celebrate!</b> </h3>
+                <br>
+ <h3><span><b style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;" >✨The Best Events, Unforgettable Moments🎉</b></span></h3>
+        </div>
+
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images5.jpeg.jpg" alt="New year festival">
+                        <a href="service.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images2.jpeg.jpg" alt="Soul Fest">
+                        <a href="service.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="https://i.pinimg.com/736x/bd/b4/bb/bdb4bb8955d28e25398dd765043d1298.jpg" alt="Qawali Night">
+                        <a href="service.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images4.jpeg.jpg" alt="Buns Road Night">
+                        <a href="service.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images6.jpeg.jpg" alt="Comedy Nights">
+                        <a href="service.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img src="images.jpeg" alt="pending">
+                        <a href="service.html" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+
+    <!-- home section ends -->
+
+    <div class="section7 container">
+        <div class="row g-3" >
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card bg-light-subtle h-100">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><b style="color: black;">Event Merchandise</b></h6>
+                        <p class="card-text" style="font-size: larger;">Get your hands on exclusive event merchandise! From limited-edition t-shirts, hoodies, and caps to collectible posters, we have something for everyone. Show your support for the event with our official merch, carefully crafted to reflect the spirit and excitement of the occasion. Don't miss out on these one-of-a-kind items, available only during the event. Grab your favorites now and make your event experience even more memorable!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card bg-light-subtle h-100">
+                    <div class="card-body" >
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><b style="color: black;">Our Partners & Sponsors</b></h6>
+                        <p class="card-text" style="font-size: larger;">Our sponsors make this event possible, playing a vital role in its success. These esteemed partners bring their expertise, resources, and innovative ideas to create an unforgettable experience for all attendees. From funding key aspects of the event to enhancing the overall atmosphere with unique activations, their contributions are invaluable.Together, we collaborate to deliver excellence, ensuring every detail is perfectly executed. We extend our heartfelt gratitude to our sponsors for their unwavering support and commitment to making this event a standout celebration!</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+           
+           
+        
+            
+
+            <div class="col-12 col-sm-6 col-md-3" >
+                <div class="card bg-light-subtle h-100">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><b style="color: black;">Event Highlights</b></h6>
+                        <p class="card-text" style="font-size: xx-larger;">Event Highlights
+                            Don’t miss the most talked-about performances that left everyone in awe! From mesmerizing musical acts to captivating keynote speakers and thrilling live shows, our events have something for everyone. Relive the magic by watching highlights from last year’s unforgettable moments, including behind-the-scenes exclusives, audience reactions, and iconic performances. Stay updated on all the latest buzz and announcements by following our social media channels. Get ready to experience an even bigger and better lineup this year—this is your chance to be part of the excitement!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card bg-light-subtle h-100">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><b style="color: black;">Have Questions?</b></h6>
+                        <p class="card-text" style="font-size: larger;">If you have any questions, concerns, or need more information, feel free to reach out! Our dedicated team is here to help and ensure you have an incredible experience. Whether you need assistance with booking tickets, event schedules, or general inquiries, we're just a message away. You can contact us through email, phone, or even via our social media channels for quick responses. Don’t hesitate—reach out today, and let’s make your experience with us even better! We're excited to hear from you!
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                           
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+
+   <!-- footer section starts  -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="AICT_PROJECT.html"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="service.html"> <i class="fas fa-arrow-right"></i> service </a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog </a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +92 3272276776</a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 3410243754</a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 3369181863</a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 3192050549</a>
+            <a href="#"> <i class="fas fa-envelope"></i> priankloungani480@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> Kalpnakotwani01@gmail.com</a>
+            <a href="#"> <i class="fas fa-envelope"></i>jasmineomperkash34@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i>eshar14nov@gmail.com</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Pakistan</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>EventHuB Team</span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- theme toggler  -->
+
+<section id="wave">
+    <footer>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </footer>
+</section>
+
+<span>
+    <div class="theme-toggler">
+
+        <div class="toggle-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+</span>
+
+<h3>choose color</h3>
+
+<div class="buttons">
+    <div class="theme-btn" style="background: #3867d6;"></div>
+    <div class="theme-btn" style="background: #f7b731;"></div>
+    <div class="theme-btn" style="background: #ff0033;"></div>
+    <div class="theme-btn" style="background: #20bf6b;"></div>
+    <div class="theme-btn" style="background: #fa8231;"></div>
+    <div class="theme-btn" style="background: #FC427B;"></div>
+</div>
+
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
+515
+​
+516
+        <div class="toggle-btn">
+517
+            <i class="fas fa-cog"></i>
+518
+        </div>
+519
+</span>
+520
+​
+521
+<h3>choose color</h3>
+522
+​
+523
+<div class="buttons">
+524
+    <div class="theme-btn" style="background: #3867d6;"></div>
+525
+    <div class="theme-btn" style="background: #f7b731;"></div>
+526
+    <div class="theme-btn" style="background: #ff0033;"></div>
+527
+    <div class="theme-btn" style="background: #20bf6b;"></div>
+528
+    <div class="theme-btn" style="background: #fa8231;"></div>
+529
+    <div class="theme-btn" style="background: #FC427B;"></div>
+530
+</div>
+531
+​
+532
+</div>
+533
+​
+534
+​
+535
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+536
+​
+537
+<!-- custom js file link  -->
+538
+<script src="script.js"></script>
+539
+​
+540
+</body>
+541
+​
+542
+</html>
