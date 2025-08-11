@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-color: #3867d6;
+        }
+
+        * {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-padding-top: 7rem;
+            scroll-behavior: smooth;
+        }
+
+        html::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: #444;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: var(--main-color);
+            border-radius: 5rem;
+        }
+
+        body {
+            background: #222;
+            color: #fff;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .blog-post .post-meta {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            color: #d0cccc;
+        }
+
+        .blog-post h2 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .recent-blog img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .card img {
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--main-color);
+        }
+
+        .card-text {
+            font-size: 1.4rem;
+            color: #c0bcbc;
+        }
+
+        .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 0.8rem 3rem;
+            font-size: 1.7rem;
+            border-radius: 2rem;
+            background: linear-gradient(90deg, rgb(74, 74, 73) 0%, rgb(109, 109, 107) 28%, rgb(61, 67, 60) 53%, rgb(85, 86, 80) 77%, rgb(79, 77, 69) 100%);
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, rgba(7, 117, 116, 1) 0%, rgba(0, 82, 255, 1) 49%, rgba(1, 134, 115, 1) 100%);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li a {
+            color: #7c7c7c;
+            font-weight: 600;
+        }
+
+        ul li a:hover {
+            color: var(--main-color);
+        }
+
+        .heading {
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-top: 2rem;
+        }
+
+        .heading span {
+            color: var(--main-color);
+        }
+
+        .header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+}
+
+.header .logo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color:var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color:#fff;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+    </style>
+</head>
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="#" class="logo"><span>Event</span>Hub</a>
+      <nav class="navbar">
+          <a href="AICT_PROJECT.html">home</a>
+          <a href="service.html">service</a>
+          <a href="about.html">about</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">contact</a>
+      </nav>
+
+      <div id="menu-bars" class="fas fa-bars"></div>
+
+  </header>
+
+  <!-- header section ends -->
+    <div class="container">
+        <h3 class="heading">
+          <br> <br><span>POPULAR EVENTS</span> OF KARACHI</h3>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="blog-post">
+                    <img src="images7.jpeg.jpg" alt="Blog Image 1">
+                    <div class="post-meta">
+                        <span>Jan. 10, 2025</span> | <span style="color: var(--main-color);">Admin</span> | <span>9 Comments</span>
+                    </div>
+                    <h2>KARACHI EAT FESTIVAL</h2>
+                    <p style="font-size: 1.3rem;">The Karachi Eat Festival is one of the city's most anticipated events, blending food and music in a vibrant celebration. Held annually, the festival features a diverse range of culinary delights from over 120 food vendors, many of whom are home-based entrepreneurs.</p>
+                </div>
+                <div class="blog-post">
+                    <img src="images8.jpeg.jpg" alt="Blog Image 2">
+                    <div class="post-meta">
+                        <span>Feb. 20, 2025</span> | <span style="color: var(--main-color);">Admin</span> | <span>8 Comments</span>
+                    </div>
+                    <h2>SOUL-FEST KARACHI</h2>
+                    <p style="font-size: 1.3rem;">The SoulFest Festival is one of Karachi's most anticipated events, blending vibrant music performances with the city's diverse culinary offerings. Held at Beach View Park, the festival invites visitors to enjoy an exciting three-day celebration featuring renowned Pakistani artists.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <h5 class="heading" style="margin-bottom: 15px;">UPCOMING EVENTS:</h5>
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="images9.jpeg.jpg" class="img-fluid" alt="Event">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">KARACHI FEAST</h5>
+                              <p class="card-text">15 March 2025</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="images10.jpeg.jpg" class="img-fluid" alt="Event">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">LIVE MUSIC AID CONCERT</h5>
+                              <p class="card-text">2 April 2025</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card mb-3">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="images11.jpeg.jpg" class="img-fluid" alt="Event">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">MASALA FAMILY FESTIVAL</h5>
+                              <p class="card-text">20 May 2025</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <h5 class="heading" style="font-weight: 800; font-size: 18px; margin-top: 30px;">CATEGORIES:</h5>
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px;">
+                  <li style="margin-bottom: 20px; margin-top: 23px;">
+                      <a href="#" style="text-decoration: none; color: #cfcbcb; font-weight: 600; margin-left: 8px;"><span style="font-size: 18px;">> </span>CONCERTS</a>
+                  </li>
+                  <li style="margin-bottom: 20px;">
+                      <a href="#" style="text-decoration: none; color: #cfcbcb; font-weight: 600; margin-left: 8px;"><span style="font-size: 18px;">> </span>EXPO EVENTS</a>
+                  </li>
+                  <li style="margin-bottom: 20px;">
+                      <a href="#" style="text-decoration: none; color: #cfcbcb; font-weight: 600; margin-left: 8px;"><span style="font-size: 18px;">> </span>WORKSHOPS</a>
+                  </li>
+                  <li style="margin-bottom: 20px;">
+                      <a href="#" style="text-decoration: none; color: #cfcbcb; font-weight: 600; margin-left: 8px;"><span style="font-size: 18px;">> </span>ART & CULTURE</a>
+                  </li>
+                  <li style="margin-bottom: 20px;">
+                      <a href="#" style="text-decoration: none; color: #cfcbcb; font-weight: 600; margin-left: 8px;"><span style="font-size: 18px;">> </span>FESTIVALS</a>
+                  </li>
+              </ul>
+              <h5 class="heading" style="font-weight: 800; font-size: 18px; margin-top: 30px;">PAST EVENTS:</h5>
+                    <img src="./Karachi-Literature-Festival.jpg" class="mt-lg-3 ms-lg-5 ms-2" style="max-width: 256px; max-height: 180px;" alt="">
+                    <h6 class="mt-3 ms-lg-5 ms-3" style="font-weight: 800; font-size: 16px;">KARACHI LITERATURE FESTIVAL</h6>
+                  
+                    <p class="mt-3 ms-lg-5 ms-3" style="font-weight: 400; color: #d7d4d4; font-size: 1.4rem;">
+                        The Karachi Literature Festival (KLF) is an annual event celebrating literary works and culture, one of the most prestigious cultural gatherings in Pakistan.<br>                   
+                 <button class="btn btn-outline border-3 rounded-0 px-2 ms-lg-5 ms-3 mb-lg-0 mb-3" style="font-size: 12px; background: none; text-decoration: underline;" type="submit">MORE</button>
+              </div>
+
+          </div>
+          
+</body>
+</html>
